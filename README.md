@@ -24,7 +24,7 @@ A custom NASCAR fantasy pool and tournament management application, built to run
 
 ## Code samples
 
-Selected, reviewed examples will be added here. The goal is to demonstrate real scoring and tournament engineering without publishing the production application or its private features. **This repository is not a deployable copy of the live site.**
+The repository includes reviewed, dependency-free examples adapted from production logic:\n\n| Example | Purpose | Tests |\n| --- | --- | --- |\n| [`src/bracket-seeding.js`](src/bracket-seeding.js) | Seed 16 players into first-round matchups | [`bracket-seeding.test.js`](tests/bracket-seeding.test.js) |\n| [`src/swiss-pairings.js`](src/swiss-pairings.js) | Group by record, rank players, and attempt to avoid rematches | [`swiss-pairings.test.js`](tests/swiss-pairings.test.js) |\n| [`src/race-scoring.js`](src/race-scoring.js) | Calculate driver-finish averages and interpret matchup results | [`race-scoring.test.js`](tests/race-scoring.test.js) |\n\nRun the examples' tests with `npm test` (Node.js 20+). The Swiss example intentionally rejects odd-sized win buckets rather than silently dropping a player, and is not a full tournament engine. **This repository is not a deployable copy of the live site.**
 
 ## Privacy and scope
 
